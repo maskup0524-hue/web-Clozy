@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- bootstrap file cloud based -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- for this contect us part -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-color: #ffffffe3;
+        }
+        /* Flex layout for small screens; Stacked layout for larger screens */
+        .custom-contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .custom-contact-info-container {
+            flex: 1;
+            padding: 20px;
+            max-width: 500px; /* Limit width for better readability */
+        }
+        .custom-contact-form-container {
+            flex: 1;
+            padding: 20px;
+            max-width: 500px; /* Limit width for better readability */
+        }
+        .custom-faq-container {
+            flex: 1;
+            padding: 20px;
+            max-width: 500px; /* Limit width for better readability */
+        }
+        .custom-contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.2s; /* Hover animation */
+        }
+        .custom-contact-info i {
+            height: auto;
+            max-width: 50px;
+            margin-bottom: 10px;
+        }
+        .custom-contact-info:hover {
+            transform: scale(1.1); /* Hover animation */
+        }
+        .custom-faq-item {
+            margin-bottom: 20px;
+        }
+
+        #faq-part{
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- nav bar start -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top"> <!-- bg-body-tertiary -->
+    <div class="container">
+      <img src="img/other pics/logo-01.png" alt="ash brand logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Men
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="men.html#section01">Shirts</a></li>
+              <li><a class="dropdown-item" href="men.html#section02">Trousers</a></li>
+              <li><a class="dropdown-item" href="men.html#section03">T-Shirts</a></li>
+              <li><a class="dropdown-item" href="men.html#section04">Shorts</a></li>
+              <li><a class="dropdown-item" href="men.html#section05">Suits</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Women
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="women.html#section06">Sarees</a></li>
+              <li><a class="dropdown-item" href="women.html#section07">Shalwars</a></li>
+              <li><a class="dropdown-item" href="women.html#section08">Frocks</a></li>
+              <li><a class="dropdown-item" href="women.html#section09">casual wearing</a></li>
+              <li><a class="dropdown-item" href="women.html#section10">Abayas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kids
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="kids.html#section11">Boys</a></li>
+              <li><a class="dropdown-item" href="kids.html#section12">Girls</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav bar end -->
+
+      <!-- main parts of contact page -->
+      <div class="container mt-5">
+        <div id="faq-part" class="row">
+            <div class="col-lg-12">
+                <div class="custom-contact-container">
+                    <!-- Left Side: Contact Form -->
+                    <div class="custom-contact-form-container">
+                        <h2 class="mb-4">Contact Us</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" id="address" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label">Mobile Number</label>
+                                <input type="tel" id="mobile" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="queries" class="form-label">Queries</label>
+                                <textarea id="queries" class="form-control" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <!-- Right Side: Contact Info & FAQs -->
+                    <div class="custom-contact-info-container">
+                        <div class="custom-contact-info">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <h5>Website</h5>
+                            <p style="text-transform: lowercase;">www.clozystore.lk</p>
+                        </div>
+                        <div class="custom-contact-info">
+                            <i class="fa-solid fa-square-phone"></i>
+                            <h5>Phone</h5>
+                            <p>+94-11-111-1111</p>
+                        </div>
+                        <div class="custom-contact-info">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h5>Address</h5>
+                            <p>11a Vidya Mawatha, Colombo 07</p>
+                        </div>
+                        <div class="custom-contact-info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h5>Email</h5>
+                            <p style="text-transform: lowercase;">clozy1234@gmail.com</p>
+                        </div>
+                        <div class="custom-contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <h5>Open hours</h5>
+                            <p>weekdays : 8:00AM - 8:00PM <br>weekends : 8:00AM - 10:00PM</p>
+                        </div>
+                    </div>
+                    <div class="custom-faq-container">
+                        <h2 class="text-center mb-4">FAQs</h2>
+                        <div class="accordion" id="customFaqAccordion">
+                            <div class="custom-faq-item">
+                                <h2 class="accordion-header" id="customFaqHeading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#customFaqCollapse1" aria-expanded="true" aria-controls="customFaqCollapse1">
+                                        Question 1: How do I place an order?
+                                    </button>
+                                </h2>
+                                <div id="customFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="customFaqHeading1" data-bs-parent="#customFaqAccordion">
+                                    <div class="accordion-body">
+                                        You can visit our website, can check the product available or not and can place order while call
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-faq-item">
+                                <h2 class="accordion-header" id="customFaqHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#customFaqCollapse2" aria-expanded="false" aria-controls="customFaqCollapse2">
+                                        Question 2: What methods of payment does CLO-ZY accept?
+                                    </button>
+                                </h2>
+                                <div id="customFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="customFaqHeading2" data-bs-parent="#customFaqAccordion">
+                                    <div class="accordion-body">
+                                      We have a wide range of payment options for you to choose from. Cash on Delivery (COD) is available throughout the island. Bank Payments / Online Bank Transfers / Payment Link or simply place an order on our website and pay with your VISA and Mastercard
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-faq-item">
+                              <h2 class="accordion-header" id="customFaqHeading3">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#customFaqCollapse3" aria-expanded="false" aria-controls="customFaqCollapse3">
+                                      Question 3: How do I track my order?
+                                  </button>
+                              </h2>
+                              <div id="customFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="customFaqHeading3" data-bs-parent="#customFaqAccordion">
+                                  <div class="accordion-body">
+                                    When you make a purchase from us, you will receive an email with your order details and a link to trace your order.
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="custom-faq-item">
+                              <h2 class="accordion-header" id="customFaqHeading4">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#customFaqCollapse4" aria-expanded="false" aria-controls="customFaqCollapse4">
+                                      Question 4: What is your return policy?
+                                  </button>
+                              </h2>
+                              <div id="customFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="customFaqHeading4" data-bs-parent="#customFaqAccordion">
+                                  <div class="accordion-body">
+                                    CLO-ZY store will happily accept returns due to change of mind as long as a request to return is received by us within 7 days of receipt of the item and is returned to us in original packaging, unused and in resalable condition.
+                                  </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer part -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+          <div class="footer-col">
+            <h4>shop now</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>company</h4>
+              <ul>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                  <li><a href="contact.html">FAQs</a></li>
+                  <li><a href="contact.html">Queries</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Account settings</h4>
+                <ul>
+                  <li><a href="#">Account Info</a></li>
+                  <li><a href="#">Change password</a></li>
+                  <li><a href="#">Wishlists</a></li>
+                </ul>
+          </div>
+          <div class="footer-col">
+            <h4>main branch</h4>
+              <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8686977545362!2d79.86825177584853!3d6.9063005185948265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2597908e10713%3A0x5094ec60f1e2649e!2sNational%20Institute%20of%20Business%20Management!5e0!3m2!1sen!2slk!4v1759598070033!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+          <div class="footer-col">
+            <h4>Payment Methods</h4>
+              <ul>
+                <li><img src="img/other pics/payment method.png" alt="" style="width:170px"></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+            <h4>opening hours</h4>
+              <ul>
+                  <li><a href="#">weekdays : 8:00AM - 8:00PM <br> weekends : 8:00AM - 10:00PM</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+            <h4>must</h4>
+              <ul>
+                  <li><a href="#">Follow Us On Social Media For Updates And Offers --></a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Join with us</h4>
+              <div class="social-links ">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <hr>
+          <p class="x text-center">---------------------------------------</p>
+          <p class="x text-center">&copy; 2024 CLO-ZY. All rights reserved.</p>
+      </div>
+  </footer>
+  <!-- footer end -->
+  
+  <!-- js cloud based -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- for this contect us part -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

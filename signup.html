@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Sign Up Page</title>
+  <style>
+    /* Add your custom styles here */
+    body {
+      background-color: #f8f9fa;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .signup-form {
+      background-color: #ffffff;
+      padding: 16px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      position: relative; /* Add this for positioning the close button */
+    }
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .signup-form h2 {
+      margin-bottom: 20px;
+    }
+    .signup-form input {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .signup-form button {
+      width: 80%;
+      padding: 10px;
+      background-color: #000000;
+      border: none;
+      color: #ffffff;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .signup-form button:hover {
+      background-color: #FF7F50;
+    }
+    .login-link {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="signup-form">
+    <span class="close-button" onclick="goBack()">&times;</span>
+    <h2>Sign Up</h2>
+    <form action="#" method="post">
+      <input type="text" name="firstname" placeholder="First Name" required>
+      <input type="text" name="lastname" placeholder="Last Name (Optional)" required>
+      <input type="email or number" name="email or phone" placeholder="Email or Phone" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="password" placeholder="Please Verify" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+      Already have an account? <a href="login.html">Log in</a>
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+  
+</body>
+</html>

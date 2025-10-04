@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.root{
+    --menu-count: 6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5dc;
+}
+
+/* navbar */
+.navbar{
+    font-size: 18px;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+    box-shadow: 0 1px 14px #000000a0;
+}
+
+.navbar .container img{
+    width: 65px;
+    height: auto;
+    margin-right: 80px;
+}
+/* bar link menu item animation */
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 14px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active{
+    color: coral;
+    /* FF7F50 coral */
+}
+
+/* menu items popup */
+.navbar a:hover{
+    padding: 0.5rem 4rem;
+    transform: scale(1.2);
+    border-radius: 5.5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #ffffffa8;
+    border-radius: 10px;
+    padding: 0.6rem 0.6rem;
+    animation: fadeInDown 0.3s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* dropdown list */
+nav .nav-item a:hover {
+    background-color: #f5f5dc;
+}
+
+/* -----search bar modification----- */
+.d-flex .btn:hover{
+    background-color: #FF7F50;
+}
+
+/* -----------------------other part----------------------- */
+
+/* main banner */
+#mainslide{
+    margin-top: 80px;
+}
+
+/* -----gift cards part----- */
+.gift-card{
+    margin: 5%;
+    text-align: center;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-img:hover {
+  transform: scale(1.1);
+}
+
+.small-img {
+  max-width: 40%;
+  height: auto;
+  margin: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.small-img:hover {
+  transform: scale(1.3);
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-rating {
+  color: gold;
+}
+
+.shop-now-ribbon {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.shop-now-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* -----new arrival----- */
+div .arrivals .row {
+    display: flex;
+    justify-content: center;
+}
+
+div .arrivals .row .card {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+div .arrivals .row .card img:hover {
+    transform: scale(1.1);
+}
+
+div .arrivals .row .card img {
+    border-radius: 2%;
+    width: 100%;
+    overflow: hidden; /* Hide the overflow for smooth animation */
+    position: relative; /* Position for absolutely positioned content */
+    transition: transform 0.3s ease;
+}
+
+.arrivals .btn{
+    background-color: #000000;
+    margin-top: 10px;
+}
+
+/* -----quick banner----- */
+
+.quick-banner {
+    margin-top: 75px;
+    margin-bottom: 2%;
+    height: 300px; /* Change this value as needed */
+    overflow: hidden;
+  }
+  .quick-banner img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-caption {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: rgb(76, 71, 71);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  .offer-text {
+    font-size: 24px;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  .quick-shop{
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 540px;
+  }
+
+/* -----Categories of the Month----- */
+.product-card .btn{
+    /* background-color: #000000;
+    border: none; */
+    margin-top: 10px;
+}
+
+.container .text-center{
+    padding-top: 0px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-image:hover{
+    transform: scale(1.1);
+}
+
+.product-title {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.star-rating {
+    color: gold;
+}
+
+.product-price {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.i-c-month{
+    padding-top: 15px;
+}
+
+/* banner blog */
+.banner-blog img{
+    width: 100%;
+    height: 50%;
+    max-height: fit-content;
+    min-height: fit-content;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* -----blog card----- */
+.blog-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To prevent image overflow */
+}
+
+.blog-card img {
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover img {
+    transform: scale(1.1);
+}
+
+.btn-read-more {
+    color: #0275d8;
+}
+
+/* -----model----- */
+div .main-model{
+    display: flex;
+    text-align: center;
+    border-radius: 4%;
+    max-width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* -----model sign up btn----- */
+
+/* Primary
+#0275d8 */
+
+.toggle-button {
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button.login {
+    background-color: #000000;
+    color: white;
+}
+
+.toggle-button.sign-up {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.toggle-button:hover {
+    background-color: #FF7F50;
+    color: #ffffff;
+}
+
+/* ----------------  footer part  ---------------- */
+
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #1e1e1e; /* #24262b */
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+/* footer menu text color */
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: coral; /* #e91e63 */
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #FF7F50;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #FF7F50;
+}
+
+div iframe{
+    width: 100%;
+    height: 100%;
+}
+
+div .x{
+    color: #ffffff;
+    margin: auto;
+}
+
+/* for responsitive footer part*/
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+    }
+}
